@@ -1,9 +1,10 @@
 # LaravelVueTemplate
 Laravel + Vue3 + Docker Project Template
 
-### Setup Docker Apache + PhP + PhpMyAdmin + MySQL + Redis
+### Install WSL2 and an Ubuntu Image Distro
+### Install, Setup and Enable Integration WSL2 with Docker Desktop
 
-All this Host Names can be found in docker-compose.yml file
+Setup Linux, Apache, MySQL, PhpMyAdmin and Redis Server
 ```sh
 git clone --recursive https://github.com/gc120978levelup1/ss_LAMP_Docker.git
 cd ss_LAMP_DOCKER
@@ -12,7 +13,7 @@ cd ..
 ./ss up
 ```
 
-Migrate MySQL database
+Migrate Laravel to MySQL database
 ```sh
 ./ss migrate
 ```
