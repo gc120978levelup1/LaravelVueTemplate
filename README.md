@@ -7,8 +7,7 @@ Laravel + Vue3 + Docker Project Template
 Setup Linux, Apache, MySQL, PhpMyAdmin and Redis Server
 ```sh
 docker network prune -f
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
+docker ps -aq | xargs docker stop | xargs docker rm
 composer install
 npm install
 npm run build
