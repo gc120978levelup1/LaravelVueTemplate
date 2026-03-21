@@ -6,6 +6,9 @@ Laravel + Vue3 + Docker Project Template
 
 Setup Linux, Apache, MySQL, PhpMyAdmin and Redis Server
 ```sh
+composer install
+npm install
+npm run build
 git clone --recursive https://github.com/gc120978levelup1/ss_LAMP_Docker.git
 cd ss_LAMP_DOCKER
 ./ss merge
