@@ -23,8 +23,6 @@ Migrate Laravel to MySQL database
 
 Initialize your Laravel project
 ```sh
-npm install
-composer install
 composer require league/flysystem-aws-s3-v3 "^3.0" --with-all-dependencies
 composer require laravel/wayfinder
 php artisan key:generate
