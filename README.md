@@ -5,7 +5,7 @@ Laravel + Vue3 + Docker Project Template
 Clone this Project
 ```sh
 git clone --recursive https://github.com/gc120978levelup1/LaravelVueTemplate.git
-```sh
+```
 
 
 ### Install WSL2 and an Ubuntu Image Distro
