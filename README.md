@@ -14,6 +14,8 @@ git clone --recursive https://github.com/gc120978levelup1/LaravelVueTemplate.git
 
 Install laravel and node ddependencies
 ```sh
+docker network prune -f
+docker ps -aq | xargs docker stop | xargs docker rm
 docker system prune -f
 composer install
 npm install
