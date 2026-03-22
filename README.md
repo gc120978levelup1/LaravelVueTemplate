@@ -4,12 +4,16 @@ Laravel + Vue3 + Docker Project Template
 ### Install WSL2 and an Ubuntu Image Distro
 ### Install, Setup and Enable Integration WSL2 with Docker Desktop
 
-Setup Linux, Apache, MySQL, PhpMyAdmin and Redis Server
+Install laravel and node
 ```sh
 docker system prune -f
 composer install
 npm install
 npm run build
+```
+
+Setup Linux, Apache, MySQL, PhpMyAdmin and Redis Server
+```sh
 git clone --recursive https://github.com/gc120978levelup1/ss_LAMP_Docker.git
 cd ss_LAMP_DOCKER
 ./ss merge
