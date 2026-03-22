@@ -4,7 +4,8 @@ Laravel + Vue3 + Docker Project Template
 ### Install WSL2 and an Ubuntu Image Distro
 ### Install, Setup and Enable Integration WSL2 with Docker Desktop
 
-Install laravel and node
+
+Install laravel and node ddependencies
 ```sh
 docker system prune -f
 composer install
