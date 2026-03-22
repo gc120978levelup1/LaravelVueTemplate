@@ -60,24 +60,6 @@ npm install -D @laravel/vite-plugin-wayfinder
 npm run build
 ```
 
-Integrate wayfinder to Vue3 through vite.config.js
-```sh
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import { wayfinder } from "@laravel/vite-plugin-wayfinder"; // Import the wayfinder plugin
-
-export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        wayfinder(), // Add the wayfinder plugin to the plugins array
-        // ... other plugins
-    ],
-});
-```
-
 Run Front End Build
 ```sh
 npm run build
