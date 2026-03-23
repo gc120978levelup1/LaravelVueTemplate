@@ -47,7 +47,6 @@ composer require league/flysystem-aws-s3-v3 "^3.0" --with-all-dependencies
 composer require laravel/wayfinder
 php artisan key:generate
 php artisan storage:link
-./ss migrate
 ```
 
 Install Leaflet for mapping and others
