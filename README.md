@@ -40,7 +40,7 @@ example:
 
 docker tag laravelvuetemplate-apache.server:latest gc120978levelup1/laravelvuetemplate-apache.server:latest
 
-ocker tag 0e5574283393 fedora/httpd:version1.0
+docker tag 0e5574283393 fedora/httpd:version1.0
 
 ```
 
