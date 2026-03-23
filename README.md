@@ -33,7 +33,15 @@ cd ..
 Wait for Docker to finish installing containers
 Notr: This command readies the built images to be uploaded to Dockerhub
 ```sh
-docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+
+docker tag SOURCE_IMAGE[:TAG] username/TARGET_IMAGE[:TAG]
+
+example:
+
+docker tag laravelvuetemplate-apache.server:latest gc120978levelup1/laravelvuetemplate-apache.server:latest
+
+ocker tag 0e5574283393 fedora/httpd:version1.0
+
 ```
 
 Migrate Laravel to MySQL database
