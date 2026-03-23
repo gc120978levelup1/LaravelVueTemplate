@@ -12,7 +12,7 @@ git clone --recursive https://github.com/gc120978levelup1/LaravelVueTemplate.git
 ### Install, Setup and Enable Integration WSL2 with Docker Desktop
 
 
-Install laravel and node ddependencies
+Remove Docker Contaners and Neworks and Install  laravel and node dependencies
 ```sh
 docker ps -aq | xargs docker stop | xargs docker rm
 docker system prune -f
