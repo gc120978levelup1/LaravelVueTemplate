@@ -31,7 +31,7 @@ cd ..
 ```
 
 Wait for Docker to finish installing containers
-Notr: This command readies the built images to be uploaded to Dockerhub
+Note: This command readies the built images to be uploaded to Dockerhub
 ```sh
 
 docker tag SOURCE_IMAGE[:TAG] username/TARGET_IMAGE[:TAG]
