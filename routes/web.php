@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QQRGenController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -27,6 +28,34 @@ Route::middleware('auth')->group(function () {
     Route::get ('/map', [MapController::class, 'index'])->name('map.index');
     Route::get ('/map/create', [MapController::class, 'create'])->name('map.create');
     Route::get ('/map/show', [MapController::class, 'show'])->name('map.show');
+});
+
+use App\Http\Controllers\FaceRecogController;
+Route::middleware('auth')->group(function () {
+    Route::get ('/face_recog', [FaceRecogController::class, 'index'])->name('face_recog.index');
+    Route::get ('/face_recog/create', [FaceRecogController::class, 'create'])->name('face_recog.create');
+    Route::get ('/face_recog/show', [FaceRecogController::class, 'show'])->name('face_recog.show');
+});
+
+use App\Http\Controllers\QxQRGenController;
+Route::middleware('auth')->group(function () {
+    Route::get ('/qr_code', [QxQRGenController::class, 'index'])->name('qrcode.index');
+    Route::get ('/qr_code/create', [QxQRGenController::class, 'create'])->name('qrcode.create');
+    Route::get ('/qr_code/show', [QxQRGenController::class, 'show'])->name('qrcode.show');
+});
+
+use App\Http\Controllers\IDScanController;
+Route::middleware('auth')->group(function () {
+    Route::get ('/id_scan', [IDScanController::class, 'index'])->name('id_scan.index');
+    Route::get ('/id_scan/create', [IDScanController::class, 'create'])->name('id_scan.create');
+    Route::get ('/id_scan/show', [IDScanController::class, 'show'])->name('id_scan.show');
+});
+
+use App\Http\Controllers\TakePhotoController;
+Route::middleware('auth')->group(function () {
+    Route::get ('/photo', [TakePhotoController::class, 'index'])->name('photo.index');
+    Route::get ('/photo/create', [TakePhotoController::class, 'create'])->name('photo.create');
+    Route::get ('/photo/show', [TakePhotoController::class, 'show'])->name('photo.show');
 });
 
 require __DIR__.'/settings.php';

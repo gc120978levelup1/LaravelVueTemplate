@@ -14,7 +14,6 @@ git clone --recursive https://github.com/gc120978levelup1/LaravelVueTemplate.git
 
 Install laravel and node ddependencies
 ```sh
-docker network prune -f
 docker ps -aq | xargs docker stop | xargs docker rm
 docker system prune -f
 composer install
@@ -29,6 +28,12 @@ cd ss_LAMP_DOCKER
 ./ss merge
 cd ..
 ./ss up
+```
+
+Wait for Docker to finish installing containers
+Notr: This command readies the built images to be uploaded to Dockerhub
+```sh
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
 
 Migrate Laravel to MySQL database

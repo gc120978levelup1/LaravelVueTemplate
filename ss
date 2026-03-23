@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Copy the appropriate .env file and docker-compose.yml
 # equal to DB_DATABASE in .env
@@ -88,6 +88,8 @@ then
     cp -r -a ./.env ../
     cp -r -a ./docker-compose.yml ../
     cp -r -a ./ss ../
+    cp -r -a ./000-default.conf ../
+    cp -r -a ./Dockerfile ../
     control_panel
     echo "Invoke a cd .. command in order to go back to main folder"
     echo "   "
@@ -96,4 +98,3 @@ else
     clear
     control_panel
 fi
-

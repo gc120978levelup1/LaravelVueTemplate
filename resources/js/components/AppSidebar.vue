@@ -9,6 +9,10 @@ import { BookOpen, Folder, LayoutGrid } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 import { dashboard } from '@/routes';
 import complaint from '@/routes/complaint';
+import face_recog from '@/routes/face_recog';
+import qrcode from '@/routes/qrcode';
+import id_scan from '@/routes/id_scan';
+import photo from '@/routes/photo';
 import map from '@/routes/map';
 
 const mainNavItems: NavItem[] = [
@@ -35,6 +39,26 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Empty',
         url: map.create().url,
+        icon: BookOpen,
+    },
+    {
+        title: 'Face Recognition',
+        url: face_recog.index().url,
+        icon: BookOpen,
+    },
+    {
+        title: 'QR Code',
+        url: qrcode.index().url,
+        icon: BookOpen,
+    },
+    {
+        title: 'ID Scanner',
+        url: id_scan.index().url,
+        icon: BookOpen,
+    },
+    {
+        title: 'Take Photo',
+        url: photo.index().url,
         icon: BookOpen,
     },
 ];
